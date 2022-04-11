@@ -6,4 +6,4 @@ workers_dev = true
 account_id = ""
 zone_id = ""
 
-route = "notion-api.e-scape.co.jp/*"
+route = "notion-api.econe.biz/*"
