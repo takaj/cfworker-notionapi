@@ -9,9 +9,17 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    name: Build and Deploy
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: yarn
+      - name: Install Dependencies
+        run: yarn install
+      - name: Build
+        run: yarn build        
       - name: Publish Worker
         uses: cloudflare/wrangler-action@1.2.0
         with:
