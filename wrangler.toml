@@ -1,4 +1,4 @@
-name = "notion-cloudflare-worker"
+name = "cfworker.notion-api"
 webpack_config = "webpack.config.js"
 type = "webpack"
 workers_dev = true
