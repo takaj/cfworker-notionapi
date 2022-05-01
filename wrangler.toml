@@ -1,9 +1,5 @@
-name = "cfworker.notion-api"
+name = "cfworker-notionapi"
 webpack_config = "webpack.config.js"
 type = "webpack"
 workers_dev = true
 
-account_id = ""
-zone_id = ""
-
-route = "notion-api.byna.me/*"
